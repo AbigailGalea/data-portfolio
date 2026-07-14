@@ -1,7 +1,7 @@
 /* Custom variables for the color palette */
 :root {
-  --bg-color: #080b11;
-  --bg-gradient-end: #0f1422;
+  --bg-color: #010712;
+  --bg-gradient-end: #05070c;
   --card-bg: #121824;
   --card-border: rgba(255, 255, 255, 0.05);
   --accent-color: #f5a623;
@@ -21,7 +21,7 @@
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg-color);
-  background-image: radial-gradient(circle at 80% 20%, #172033 0%, var(--bg-color) 60%);
+  /*background-image: radial-gradient(circle at 80% 20%, #172033 0%, var(--bg-color) 60%)*/;
   color: var(--text-main);
   min-height: 100vh;
   line-height: 1.6;
