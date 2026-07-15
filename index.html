@@ -13,33 +13,33 @@
   <!-- Background Glows -->
   <!--<div class="glow glow-top-right"></div>-->
 
-  <!-- Header -->
+<!-- Header -->
   <header class="navbar">
-    <div class="logo">
-      <span class="logo-icon">🐱</span>
-      <span class="logo-text">Curious Cat <span class="accent-text">LABS</span></span>
+    <div class="navbar-top">
+      <div class="logo">
+        <span class="logo-icon">🐱</span>
+        <span class="logo-text">Curious Cat <span class="accent-text">LABS</span></span>
+      </div>
+      <button class="theme-toggle" id="themeToggle">☀️</button>
     </div>
     <nav class="nav-links">
-      <a href="#" class="active">Home</a>
-      <a href="#">Experiments</a>
-      <a href="#">Toolkit</a>
-      <a href="#">Lab Notes</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <span class="nav-indicator" aria-hidden="true"></span>
+      <a href="#hero" class="nav-item active">Home</a>
+      <a href="#experiments" class="nav-item">Experiments</a>
+      <a href="#toolkit" class="nav-item">Toolkit</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#contact" class="nav-item">Contact</a>
     </nav>
-    <div class="nav-actions">
-      <button class="theme-toggle">☀️</button>
-    </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-content">
       <h1 class="hero-title">
         Curiosity<br>drives<br><span class="accent-text">better<br>decisions.</span>
       </h1>
       <p class="hero-subtitle">
-        Data analytics, visualisation and machine learning solutions that turn complex data into clear, actionable insights.
+        Data analytics, visualisation and machine learning solutions that turn complex data into clear and usable insights.
       </p>
       <a href="#" class="btn btn-primary">
         <span class="btn-icon">🐾</span> Explore Experiments
@@ -47,16 +47,12 @@
     </div>
     
     <div class="hero-illustration">
-      <!-- You would place your SVG or PNG cat graphic here -->
-      <div>
-          <!-- Replace with your actual portrait image -->
-          <img src="src/cat_image.png" alt="curious cat photo">
-        </div>
+          <img src="src/cat_image.png" alt="curious cat photo" class="hero-image">
     </div>
   </section>
 
   <!-- Featured Experiments Section -->
-  <section class="section">
+  <section class="section" id="experiments">
     <div class="section-header">
       <h2 class="section-title">🧪 Featured Experiments</h2>
       <a href="#" class="view-all">View all experiments →</a>
@@ -91,7 +87,7 @@
         <p class="card-description">Analysed 20K+ Maltese news articles to uncover sentiment trends over time.</p>
         <div class="card-footer">
           <div class="visual-placeholder wave">📈</div>
-          <button class="arrow-btn">→</button>
+          <a class="arrow-btn" href="experiments/index.html">→</a>
         </div>
       </div>
 
@@ -129,8 +125,57 @@
     </div>
   </section>
 
+  <!-- Toolkit Section -->
+  <section class="section" id="toolkit">
+    <div class="section-header toolkit-header">
+      <div>
+        <h2 class="section-title">🧰 My Toolkit</h2>
+        <p class="section-subtitle">Tools I use to solve data problems and build insights.</p>
+      </div>
+      <span class="toolkit-badge">Always learning 💛</span>
+    </div>
+
+    <div class="toolkit-grid">
+      <div class="toolkit-card">
+        <div class="toolkit-icon">📊</div>
+        <div class="toolkit-name">Power BI</div>
+        <div class="toolkit-rating">●●●●●</div>
+      </div>
+      <div class="toolkit-card">
+        <div class="toolkit-icon">🗄️</div>
+        <div class="toolkit-name">SQL</div>
+        <div class="toolkit-rating">●●●●●</div>
+      </div>
+      <div class="toolkit-card">
+        <div class="toolkit-icon">🐍</div>
+        <div class="toolkit-name">Python</div>
+        <div class="toolkit-rating">●●●●●</div>
+      </div>
+      <div class="toolkit-card">
+        <div class="toolkit-icon">🅡</div>
+        <div class="toolkit-name">R</div>
+        <div class="toolkit-rating">●●●●</div>
+      </div>
+      <div class="toolkit-card">
+        <div class="toolkit-icon">ƒx</div>
+        <div class="toolkit-name">DAX</div>
+        <div class="toolkit-rating">●●●●</div>
+      </div>
+      <div class="toolkit-card">
+        <div class="toolkit-icon">🤖</div>
+        <div class="toolkit-name">Machine Learning</div>
+        <div class="toolkit-rating">●●●●●</div>
+      </div>
+      <div class="toolkit-card">
+        <div class="toolkit-icon">📈</div>
+        <div class="toolkit-name">Data Visualisation</div>
+        <div class="toolkit-rating">●●●●●</div>
+      </div>
+    </div>
+  </section>
+
 <!-- About & Lab Notes Section -->
-  <section class="section grid-two-columns">
+  <section class="section grid-two-columns" id="about">
     
     <!-- Meet the Analyst -->
     <div class="card profile-card">
@@ -212,7 +257,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="logo">
       <span class="logo-icon">🐱</span>
       <span class="logo-text">Curious Cat <span class="accent-text">LABS</span></span>
@@ -232,6 +277,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
   
 </body>
 </html>
