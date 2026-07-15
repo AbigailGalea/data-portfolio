@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News Sentiment Analysis — Curious Cat LABS</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-top">
+      <div class="logo">
+        <span class="logo-icon">🐱</span>
+        <span class="logo-text">Curious Cat <span class="accent-text">LABS</span></span>
+      </div>
+      <a href="../index.html" class="btn btn-secondary">Back to main page</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="hero" style="padding-top:2.5rem;">
+      <div class="hero-content">
+        <div class="toolkit-badge">Natural Language Processing</div>
+        <h1 class="hero-title" style="margin-top:0.6rem;">News Sentiment Analysis</h1>
+        <p class="hero-subtitle" style="margin-top:1rem;">Analysing 20K+ Maltese news articles to uncover sentiment trends over time. A pipeline for scraping, NLP processing and time-series analysis with interactive dashboards.</p>
+
+        <div style="display:flex;gap:1rem;margin-top:1.25rem;flex-wrap:wrap;">
+          <a class="btn btn-primary" href="#view">View Dashboard</a>
+          <a class="btn btn-outline" href="#report">Read the full report</a>
+        </div>
+
+        <div style="display:flex;gap:1rem;margin-top:1.75rem;flex-wrap:wrap;">
+          <div class="toolkit-card">
+            <div class="toolkit-name">Duration</div>
+            <div class="toolkit-rating">Jan 2023 – May 2023</div>
+          </div>
+          <div class="toolkit-card">
+            <div class="toolkit-name">Dataset</div>
+            <div class="toolkit-rating">20,134 articles</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-illustration">
+        <div class="card" style="width:100%;height:100%;min-height:360px;display:flex;flex-direction:column;justify-content:space-between;">
+          <div style="flex:1;display:flex;align-items:center;justify-content:center;color:var(--text-muted);">Interactive chart / embed</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:1rem;">
+            <div class="card">
+              <div class="card-title">Positive Articles</div>
+              <div style="font-size:1.2rem;font-weight:700;margin-top:0.25rem;">7,842 <span style="color:var(--accent-color);font-size:0.85rem;margin-left:0.5rem;">38.9%</span></div>
+            </div>
+            <div class="card">
+              <div class="card-title">Neutral Articles</div>
+              <div style="font-size:1.2rem;font-weight:700;margin-top:0.25rem;">9,256 <span style="color:var(--text-muted);font-size:0.85rem;margin-left:0.5rem;">45.9%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-two-columns" style="margin-top:2.25rem;gap:1.25rem;">
+      <div style="display:grid;gap:1rem;">
+        <div class="card">
+          <div class="card-title">Overview</div>
+          <p class="note-text" style="margin-top:0.75rem;">This project focuses on sentiment analysis of Maltese news articles published on Times of Malta. The goal was to understand public sentiment around key national events and track how it evolved over time.</p>
+          <p class="note-text" style="margin-top:0.5rem;">Using web scraping, natural language processing, and time series analysis, I built an end-to-end pipeline to collect, process, and analyse over 20,000 articles. The results reveal interesting patterns in how sentiment shifts in response to political, social, and economic events.</p>
+          <img src="../src/cat_image.png" alt="cat" style="width:120px;margin-top:0.75rem;float:right;filter:drop-shadow(0 8px 20px rgba(0,0,0,0.4));" />
+        </div>
+
+        <div class="card">
+          <div class="card-title">Technologies Used</div>
+          <ul class="tags" style="margin-top:0.75rem;">
+            <li class="tag">Python — Data collection, preprocessing, analysis</li>
+            <li class="tag">R — Time series analysis & visualisation</li>
+            <li class="tag">Selenium — Web scraping</li>
+            <li class="tag">SpaCy / NLTK — Text processing</li>
+            <li class="tag">Matplotlib & Plotly — Charts & dashboards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:1rem;">
+        <div class="card">
+          <div class="card-title">Key Insights</div>
+          <ul style="margin-top:0.75rem;list-style:none;padding:0;display:flex;flex-direction:column;gap:0.6rem;">
+            <li>🔻 Sentiment drops significantly during major political events — negative peaks correlate with elections and scandals.</li>
+            <li>➖ Neutral sentiment dominates daily articles — nearly 46% are neutral, indicating factual reporting.</li>
+            <li>🔺 Positive sentiment grows over time — a gradual increase visible in 2022.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Project Highlights</div>
+          <div class="toolkit-grid" style="margin-top:0.75rem;">
+            <div class="toolkit-card">
+              <div class="toolkit-name">20K+</div>
+              <div class="toolkit-rating">Articles Scraped</div>
+            </div>
+            <div class="toolkit-card">
+              <div class="toolkit-name">98%</div>
+              <div class="toolkit-rating">Data Extraction Success</div>
+            </div>
+            <div class="toolkit-card">
+              <div class="toolkit-name">3-Class</div>
+              <div class="toolkit-rating">Sentiment Model</div>
+            </div>
+            <div class="toolkit-card">
+              <div class="toolkit-name">12 Months</div>
+              <div class="toolkit-rating">Time Series Analysis</div>
+            </div>
+          </div>
+          <div style="margin-top:1rem;text-align:right;"><a class="btn btn-outline" href="#report">Read the full report</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

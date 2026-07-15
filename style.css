@@ -1,7 +1,9 @@
+:root {}
+
 /* Custom variables for the color palette */
 :root {
   --bg-color: #010712;
-  --bg-gradient-end: #05070c;
+  --bg-gradient-end: #010712;
   --card-bg: #121824;
   --card-border: rgba(255, 255, 255, 0.05);
   --accent-color: #f5a623;
@@ -18,7 +20,7 @@
   --card-face-border: rgba(255, 255, 255, 0.05);
   --eye-iris: #000;
   --question-mark: rgba(255, 255, 255, 0.05);
-  --toolkit-card-gradient-start: rgba(16, 23, 37, 0.95);
+  --toolkit-card-gradient-start: #0b121e;
   --toolkit-card-gradient-end: #0b121e;
   --footer-border: rgba(255, 255, 255, 0.05);
   --btn-text: #000000;
@@ -27,7 +29,7 @@
 
 body.light-theme {
   --bg-color: #f7f3e8;
-  --bg-gradient-end: #ece4d9;
+  --bg-gradient-end: #f7f3e8;
   --card-bg: #ffffff;
   --card-border: rgba(17, 24, 39, 0.08);
   --accent-color: #cf8e2f;
@@ -44,8 +46,8 @@ body.light-theme {
   --card-face-border: rgba(17, 24, 39, 0.08);
   --eye-iris: #111827;
   --question-mark: rgba(17, 24, 39, 0.08);
-  --toolkit-card-gradient-start: rgba(255, 255, 255, 0.95);
-  --toolkit-card-gradient-end: #f6f0e5;
+  --toolkit-card-gradient-start: #ffffff;
+  --toolkit-card-gradient-end: #ffffff;
   --footer-border: rgba(17, 24, 39, 0.12);
   --btn-text: #111827;
   --arrow-icon: #111827;
@@ -267,6 +269,11 @@ html {
 .btn-primary:hover {
   background-color: var(--accent-hover);
   transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--card-bg);
+  color: var(--text-muted);
 }
 
 /* Hero Illustration Placeholder */
@@ -693,7 +700,7 @@ html {
 .cta-card {
   padding: 2rem;
   min-height: auto;
-  background-image: radial-gradient(circle at 10% 10%, rgba(245, 166, 35, 0.03) 0%, var(--card-bg) 70%);
+  background: var(--card-bg);
 }
 
 .cta-icon {
